@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c0c12" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Nova Exchange Arena</title>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <main class="layout">
+    <section class="panel">
+      <h1>Nova Exchange Arena</h1>
+      <div class="grid">
+        <div>Wallet <strong id="wallet"></strong></div>
+        <div>Case EV <strong id="ev"></strong></div>
+      </div>
+      <button id="open-case">Open Quantum Case ($2.50)</button>
+      <div id="skin-preview"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Casino · Provably Fair Dice</h2>
+      <button id="play-dice">Roll Dice ($20)</button>
+      <div id="dice-result" class="mono">Ready.</div>
+      <h3>Verification Log</h3>
+      <pre id="fair-log" class="mono"></pre>
+    </section>
+
+    <section class="panel">
+      <h2>Market</h2>
+      <div id="market-list" class="market-list"></div>
+    </section>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
