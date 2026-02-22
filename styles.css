@@ -1,0 +1,17 @@
+:root {
+  --bg: #0c0c12; --panel: #14141d; --elev: #1a1a26; --primary: #7a5cff; --secondary: #a855f7; --glow:#9d4edd; --highlight:#c084fc;
+  --text:#f1f1f5; --muted:#a1a1b3; --success:#22c55e; --danger:#ef4444; --gold:#facc15;
+}
+*{box-sizing:border-box}
+body { margin:0; background:var(--bg); color:var(--text); font-family: Inter, system-ui, sans-serif; }
+#bg { position: fixed; inset: 0; z-index: -1; width: 100vw; height: 100vh; }
+.layout { max-width: 1200px; margin: 16px auto; padding: 8px; display:grid; gap:12px; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); }
+.panel { background: color-mix(in srgb, var(--panel) 90%, transparent); border:1px solid #2a2a3a; border-radius:6px; padding:12px; box-shadow: 0 0 12px rgba(157,78,221,.1); }
+button { background: var(--elev); border:1px solid #3a3a50; color:var(--text); border-radius:6px; padding:8px 10px; cursor:pointer; }
+button:hover { border-color: var(--primary); }
+.grid{display:grid;grid-template-columns:1fr 1fr; gap:6px; margin-bottom:10px}
+.market-list{display:grid; gap:6px}
+.market-row{display:flex;justify-content:space-between;width:100%; text-align:left}
+.skin-card{margin-top:12px; border:1px solid; border-radius:6px; padding:8px; background:var(--elev)}
+.weapon-svg{width:100%; height:90px}
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color:var(--muted); font-size:12px; white-space:pre-wrap; }
